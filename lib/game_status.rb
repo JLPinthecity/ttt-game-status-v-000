@@ -20,6 +20,12 @@ WIN_COMBINATIONS =
 ]
 
 def won?(board)
-
-
+  
+  WIN_COMBINATIONS.detect do |row|
+    board[row[0]] == board[row[1]] && board[row[1]] == board[row[2]]
+    && position_taken(board, row[0])
 end
+
+
+#return false/nil if there is no winning combo present
+#return winning combination indexes as an array if there is a win
