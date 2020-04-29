@@ -33,7 +33,7 @@ end
 #return winning combination indexes as an array if there is a win
 
 def full?(board)
-   board.any? do |index|
-     index == " "
+   board.all? do |index|
+     index == "X" || index == "O"
    end
 end
