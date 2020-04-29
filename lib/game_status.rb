@@ -37,3 +37,7 @@ def full?(board)
      index == "X" || index == "O"
    end
 end
+
+def draw?(board)
+
+end
