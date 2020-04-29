@@ -31,3 +31,9 @@ end
 
 #return false/nil if there is no winning combo present
 #return winning combination indexes as an array if there is a win
+
+def full?(board)
+   board.any? do |index|
+     index == " "
+   end
+end
